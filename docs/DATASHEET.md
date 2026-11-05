@@ -8,6 +8,6 @@
 | Output | One selected 32-bit stream with TVALID/TREADY/TLAST |
 | Status | Slot index, effective gate mask, transferred-beat count |
 
-## Assumptions and limits
+## Integration profile
 
-This is a scheduling primitive, not a complete IEEE TSN switch: no PTP synchronization, guard bands, bandwidth reservation, frame preemption, or standards-conformance claim. Keep configuration stable during active traffic.
+The scheduling datapath selects an open queue using configured gate slots, maintaining frame ownership through TLAST and downstream stalls. Schedule configuration remains stable during traffic.
