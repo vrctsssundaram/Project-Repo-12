@@ -1,4 +1,4 @@
-# TSN-TimeGate
+# Time-gated frame scheduler
 
 Four-port time-slot traffic scheduler with frame-contiguous forwarding.
 
